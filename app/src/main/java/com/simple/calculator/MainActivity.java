@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             operation = operations.plus;
         } else if ("-".equals(text)) {
             operation = operations.minus;
-        } else if ("*".equals(text)) {
+        } else if ("x".equals(text)) {
             operation = operations.multiply;
         } else if ("÷".equals(text)) {
             operation = operations.devide;
@@ -117,5 +117,6 @@ public class MainActivity extends AppCompatActivity {
 
         txt.setText(txt.getText() + " = " + String.valueOf(resault));
         resetValues();
+        firstNum = resault;
     }
 }
