@@ -42,12 +42,14 @@
                 android:id="@+id/btn2"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="2" />
 
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="3" />
 
             <Button
@@ -55,6 +57,12 @@
                 android:layout_width="67dp"
                 android:layout_height="56dp"
                 android:text="x" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="67dp"
+                android:layout_height="56dp"
+                android:text="c" />
         </TableRow>
 
         <TableRow
@@ -65,18 +73,21 @@
                 android:id="@+id/btn4"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="4" />
 
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="5" />
 
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="6" />
 
             <Button
@@ -96,18 +107,21 @@
                 android:id="@+id/btn7"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="7" />
 
             <Button
                 android:id="@+id/btn8"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="8" />
 
             <Button
                 android:id="@+id/btn9"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="9" />
 
             <Button
@@ -132,6 +146,7 @@
                 android:id="@+id/btn0"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnNumClick"
                 android:text="0" />
 
             <Button
