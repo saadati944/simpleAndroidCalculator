@@ -12,8 +12,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     //variables
-    public float firstNum = 0;
-    public float secondNum = 0;
+    public long firstNum = 0;
+    public long secondNum = 0;
     public enum operations {
         plus,
         minus,
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-
+        txt.setText(String.valueOf(firstNum) + getOperationString() + String.valueOf(secondNum));
     }
     void resetValues()
     {
@@ -81,5 +81,41 @@ public class MainActivity extends AppCompatActivity {
     {
         resetValues();
         updateText();
+    }
+    public void btnOperationClick(View view)
+    {
+        CharSequence text = ((Button) view).getText();
+        if ("+".equals(text)) {
+            operation = operations.plus;
+        } else if ("-".equals(text)) {
+            operation = operations.minus;
+        } else if ("*".equals(text)) {
+            operation = operations.multiply;
+        } else if ("÷".equals(text)) {
+            operation = operations.devide;
+        }
+        updateText();
+    }
+    public void btnCalculateClick(View view)
+    {
+        long resault = 0;
+        switch (operation)
+        {
+            case plus:
+                resault = firstNum + secondNum;
+                break;
+            case minus:
+                resault = firstNum - secondNum;
+                break;
+            case multiply:
+                resault = firstNum * secondNum;
+                break;
+            case devide:
+                resault = firstNum / secondNum;
+                break;
+        }
+
+        txt.setText(txt.getText() + " = " + String.valueOf(resault));
+        resetValues();
     }
 }

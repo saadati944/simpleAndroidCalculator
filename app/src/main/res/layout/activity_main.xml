@@ -56,14 +56,10 @@
                 android:id="@+id/btnMultiply"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnOperationClick"
                 android:text="x" />
 
-            <Button
-                android:id="@+id/btnClear"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
-                android:onClick="btnClear"
-                android:text="c" />
+
         </TableRow>
 
         <TableRow
@@ -95,6 +91,7 @@
                 android:id="@+id/btnDevide"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnOperationClick"
                 android:text="÷"
                 tools:text="÷" />
 
@@ -129,6 +126,7 @@
                 android:id="@+id/btnMinus"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnOperationClick"
                 android:text="-" />
 
         </TableRow>
@@ -138,10 +136,11 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btnFPoint"
+                android:id="@+id/btnClear"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
-                android:text="." />
+                android:onClick="btnClear"
+                android:text="c" />
 
             <Button
                 android:id="@+id/btn0"
@@ -151,15 +150,17 @@
                 android:text="0" />
 
             <Button
-                android:id="@+id/btnEquals"
+                android:id="@+id/btnCalculate"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnCalculateClick"
                 android:text="=" />
 
             <Button
                 android:id="@+id/btnPlus"
                 android:layout_width="67dp"
                 android:layout_height="56dp"
+                android:onClick="btnOperationClick"
                 android:text="+" />
         </TableRow>
     </TableLayout>
