@@ -113,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
             case devide:
                 resault = firstNum / secondNum;
                 break;
+            case noop:
+                return;
         }
 
         txt.setText(txt.getText() + " = " + String.valueOf(resault));
