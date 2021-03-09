@@ -10,18 +10,24 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp">
 
         <EditText
             android:id="@+id/txt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="441dp"
             android:ems="10"
+            android:enabled="false"
             android:fontFamily="monospace"
-            android:inputType="textPersonName"
-            android:text="0"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="0" />
     </LinearLayout>
 
     <TableLayout
