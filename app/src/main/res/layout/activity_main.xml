@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -16,16 +17,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="monospace"
             android:inputType="textPersonName"
-            android:text="0" />
+            android:text="0"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
 
         <TableRow
             android:layout_width="match_parent"
@@ -33,29 +39,33 @@
 
             <Button
                 android:id="@+id/btn1"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="1" />
 
             <Button
                 android:id="@+id/btn2"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="2" />
 
             <Button
                 android:id="@+id/btn3"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="3" />
 
             <Button
                 android:id="@+id/btnMultiply"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnOperationClick"
                 android:text="x" />
 
@@ -68,29 +78,33 @@
 
             <Button
                 android:id="@+id/btn4"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="4" />
 
             <Button
                 android:id="@+id/btn5"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="5" />
 
             <Button
                 android:id="@+id/btn6"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="6" />
 
             <Button
                 android:id="@+id/btnDevide"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnOperationClick"
                 android:text="÷"
                 tools:text="÷" />
@@ -103,29 +117,33 @@
 
             <Button
                 android:id="@+id/btn7"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="7" />
 
             <Button
                 android:id="@+id/btn8"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="8" />
 
             <Button
                 android:id="@+id/btn9"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="9" />
 
             <Button
                 android:id="@+id/btnMinus"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnOperationClick"
                 android:text="-" />
 
@@ -137,29 +155,33 @@
 
             <Button
                 android:id="@+id/btnClear"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnClear"
                 android:text="c" />
 
             <Button
                 android:id="@+id/btn0"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnNumClick"
                 android:text="0" />
 
             <Button
                 android:id="@+id/btnCalculate"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnCalculateClick"
                 android:text="=" />
 
             <Button
                 android:id="@+id/btnPlus"
-                android:layout_width="67dp"
-                android:layout_height="56dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
                 android:onClick="btnOperationClick"
                 android:text="+" />
         </TableRow>
