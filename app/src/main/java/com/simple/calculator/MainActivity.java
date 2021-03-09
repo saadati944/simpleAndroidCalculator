@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -114,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 resault = firstNum / secondNum;
                 break;
             case noop:
+                Toast.makeText(this, "No more operations to do !", Toast.LENGTH_SHORT).show();
                 return;
         }
 
